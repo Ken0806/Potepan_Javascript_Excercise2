@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>電卓</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="display" class="display__main"></div>
+      <div class="row-01">
+        <button class="btn" value="7" onclick="btnClick(this)">7</button>
+        <button class="btn" value="8" onclick="btnClick(this)">8</button>
+        <button class="btn" value="9" onclick="btnClick(this)">9</button>
+        <button class="btn" value="+" onclick="btnClick(this)">+</button>
+      </div>
+      <div class="row-02">
+        <button class="btn" value="4" onclick="btnClick(this)">4</button>
+        <button class="btn" value="5" onclick="btnClick(this)">5</button>
+        <button class="btn" value="6" onclick="btnClick(this)">6</button>
+        <button class="btn" value="-" onclick="btnClick(this)">-</button>
+      </div>
+      <div class="row-03">
+        <button class="btn" value="1" onclick="btnClick(this)">1</button>
+        <button class="btn" value="2" onclick="btnClick(this)">2</button>
+        <button class="btn" value="3" onclick="btnClick(this)">3</button>
+        <button class="btn" value="*" onclick="btnClick(this)">*</button>
+      </div>
+      <div class="row-04">
+        <button class="btn" value="0" onclick="btnClick(this)">0</button>
+        <button class="btn" value="00" onclick="btnClick(this)">00</button>
+        <button class="btn" value="." onclick="btnClick(this)">.</button>
+        <button class="btn" value="/" onclick="btnClick(this)">/</button>
+      </div>
+      <div class="row-05">
+        <button id="allClear" onclick="allClear()">AC</button>
+        <button id="result" class="btn" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
